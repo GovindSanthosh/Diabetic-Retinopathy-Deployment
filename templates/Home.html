@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+  {% load static %}
+  {{ form.name.errors }}
+  <html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Retinopathy Diagnosis">
+    <meta name="description" content="">
+    <title>Home</title>
+ 
+    <link rel="stylesheet" href="{% static 'Home.css' %}" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  </head>
+  <body data-lang="en"><header class="u-clearfix u-header u-header" id="sec-4b04"><div class="u-clearfix u-sheet u-sheet-1">
+    <ul>
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/contacts/">Contacts</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>    
+      </div></header>
+    <section>
+      <div class="nice">
+        <h1>Retinopathy Diagnosis</h1>
+        <h3>Enter the details of the patient in the form given below<span style="font-size: 1.5rem;"></span>
+        </h3>
+        <div>
+          {{ form.non_field_errors }}
+          <form action="/results/" method="POST" name="form" style="padding: 10px;">
+            {%csrf_token%}
+            <div>
+              <label>Age</label>
+                <input type="number" placeholder="Enter the age of the person" id="name-b3a8" name="age" required="">
+            </div>
+            <div>
+              <label>Systolic bp</label>
+                <input type="number" placeholder="Enter the systolic blood pressure of the person" id="text-ghf" name="systolic_bp" required="">
+            </div>
+            <div>
+              <label>Diastolic bp</label>
+                <input type="number" placeholder="Enter the diastolic bp of the person" id="text-f969" name="diastolic_bp" required="required">
+            </div>
+            <div>
+              <label>Cholesterol</label>
+                <input type="number" placeholder="Enter the cholesterol value of the person" id="text-de01" name="cholesterol" required="required">
+            </div>
+              <input type="submit" value="submit">
+            </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="4381c6251f65920ba19b2c15420341fe">
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <p>Project</p>
+    </div>
+  
+</body></html>
