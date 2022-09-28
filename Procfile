@@ -1,1 +1,1 @@
-web: gunicorn retinopathyClassification.wsgi
+web: gunicorn RetinopathyClassification.wsgi
