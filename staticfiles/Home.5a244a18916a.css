@@ -165,19 +165,23 @@ h3 {
 }
 
 body {
-  background: url("/static/images/img5.86cd157c0308.jpg") no-repeat;
-  background-size: contain;
-  background-position: right;
+  background: url("/static/images/img5.86cd157c0308.jpg"),url("/static/images/logo.aed47204447b.jpg");
+  background-repeat:no-repeat,no-repeat;
+  background-size: contain, 200px;
+  background-position: right,0% 10%; 
 }
 
 .about {
-  background: white;
-
+  background: url("/static/images/logo.aed47204447b.jpg") no-repeat;
+  background-position: 0% 11%; 
+  background-size: 200px;
 }
 
 .contacts {
 
-  background:white;
+  background: url("/static/images/logo.aed47204447b.jpg") no-repeat;
+  background-position: 0% 10%; 
+  background-size: 200px;
 
 }
 

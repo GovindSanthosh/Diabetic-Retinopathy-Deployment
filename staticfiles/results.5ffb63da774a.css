@@ -142,5 +142,7 @@ h3 {
 
 
 body {
-  background: white;
+  background: url("/static/images/logo.aed47204447b.jpg") no-repeat;
+  background-position: 0% 20%; 
+  background-size: 200px;
 }
