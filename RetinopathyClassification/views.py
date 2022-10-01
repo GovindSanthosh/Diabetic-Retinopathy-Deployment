@@ -26,11 +26,11 @@ def result(request):
         print(result_text)
         a=rf.predict_proba(input_array)
         prob="{:.0%}". format(a[0,result[0]])
-    
+        return render(request,'results.html',{'result_text':result_text,'prob_text':prob})
     else:
-        result_text='There is some error Try Again'
+        return render(request,'resultserror.html')
 
-    return render(request,'results.html',{'result_text':result_text,'prob_text':prob})
+
 
 
 def about(request):
