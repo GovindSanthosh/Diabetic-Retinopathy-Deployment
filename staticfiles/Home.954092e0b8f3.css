@@ -171,21 +171,21 @@ h3 {
 
 }
 body {
-  background: url("/static/images/img5.jpg"),url("/static/images/logo.jpg");
+  background: url("/static/images/img5.86cd157c0308.jpg"),url("/static/images/logo.aed47204447b.jpg");
   background-repeat:no-repeat,no-repeat;
   background-size: contain, 200px;
   background-position: right,1% 10%; 
 }
 
 .about {
-  background: url("/static/images/logo.jpg") no-repeat;
+  background: url("/static/images/logo.aed47204447b.jpg") no-repeat;
   background-position: 1% 12%; 
   background-size: 200px;
 }
 
 .contacts {
 
-  background: url("/static/images/logo.jpg") no-repeat;
+  background: url("/static/images/logo.aed47204447b.jpg") no-repeat;
   background-position: 0% 10%; 
   background-size: 200px;
 
